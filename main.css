@@ -30,10 +30,6 @@ header a {
     margin-right: 25px ;
 }
 
-.fa-chevron-right{
-    font-size: 14px;
-    
-}
 button{
     font-family: 'Raliway',sans-serif;
     font-size: 15px;
@@ -45,7 +41,6 @@ button{
     box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
     padding: 15px;
 }
-
 
 .about__image{
     width: 500px;
@@ -88,18 +83,8 @@ button{
 
 .about_info{
     max-width: 550px;
-    
 }
 
-.animate__animated.animate__fadeInLeft{
-    animation-duration: 2s;
-    animation-iteration-count: 1s;
-
-}
-.animate__animated.animate__fadeInRight{
-    animation-duration: 2s;
-    animation-iteration-count: 1s;
-}
 .form__container{
     width: 550px;
 }
@@ -222,29 +207,6 @@ footer h3{
         transform: rotate(360deg);
     }
 }
-@keyframes animate__fadeInLeft{
-    0%{
-        opacity: 0;
-    }
-    50%{
-        opacity: 0.5;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-@keyframes animate__fadeInRight{
-    0%{
-        opacity: 0;
-    }
-    50%{
-        opacity: 0.5;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-    
 /* For Iphone SE (320x720) */
 @media (max-width: 720px){
     header{
