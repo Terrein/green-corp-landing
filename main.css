@@ -86,9 +86,8 @@ button{
     margin-top: 20px;
 }
 
-.about_info{
+.about__info{
     max-width: 550px;
-    
 }
 
 .animate__animated.animate__fadeInLeft{
