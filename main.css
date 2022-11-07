@@ -99,6 +99,105 @@ button{
     animation-duration: 2s;
     animation-iteration-count: 1s;
 }
+.features{
+    background-color: #fff;
+    padding: 115px 60px; 
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+.card{
+    padding: 35px 40px 25px;
+    border: 1px solid #D9E4E6;
+    border-radius: 5px;
+}
+
+.card p{
+    font-size: 16px;
+    opacity: 0.8;
+    line-height: 22px;
+}
+.card__logo{
+    width: 100px;
+    height: 100px;
+    background-color: #eaeff9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+.fa-solar-panel{
+    color: #ffb406;
+}
+
+.card__logo p{
+    color: #ad1714;
+}
+
+.fa-chart-line{
+    color: #22a030;
+}
+
+.features__border{
+    width: 100%;
+    border: 1px solid #E6EAF4;
+    margin: 50px auto;
+}
+
+.features__feedback{
+    display: flex;
+}
+
+.features__feedback-left{
+    margin-right: 10px;
+}
+
+.features__feedback-left h2{
+    font-size: 48px;
+}
+.features__feedback-left p{
+    font-size: 18px;
+    line-height: 26px;
+    opacity: 0.7;
+}
+.features__feedback-right{
+    display: flex;
+    align-items: center;
+}
+
+.features__box{
+    padding: 30px 40px 25px;
+    border-radius: 25px;
+    color: white;
+    height: 50%;
+}
+
+.features__box h3{
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-size: 48px;
+}
+
+.stars {
+    color: #FF7039;
+}
+
+.features__savings-box{
+    background-color: #dc5e26;
+    box-shadow: 0 6px 0 rgb(221 95 38 / 20%);
+    margin-right: 30px;
+}
+
+.features__rate-box{
+    background-color: #1D263A;
+    box-shadow: 0 6px 0 rgb(29 38 58 / 20%);
+}
+
 .form__container{
     width: 550px;
 }
@@ -269,6 +368,30 @@ footer h3{
     .about__sun-image{
         width: 75px;
         height: 75px;
+    }
+    .features{
+        padding: 50px 10px;
+    }
+    .cards{
+        grid-template-columns: auto;
+    }
+
+    .features__feedback{
+        flex-direction: column;
+    }
+    .features__feedback-left{
+        margin-right: 0;
+    }
+    .features__feedback-left h2, .features__box h3{
+        font-size: 36px;
+    }
+    .features__feedback-right {
+        flex-direction: column;
+        align-items: initial;
+    }
+    .features__savings-box{
+        margin-right: 0;
+        margin-bottom: 30px;
     }
     .form{
         padding: 50px 10px;
