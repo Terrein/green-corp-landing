@@ -202,7 +202,7 @@ button{
     display: flex;
 }
 .promo__image{
-    background-image: url(/img/promo.jpg);
+    background-image: url("/img/promo.jpg");
     background-position: center;
     background-size: cover;
     flex-shrink: 0;
