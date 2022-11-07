@@ -206,9 +206,6 @@ button{
     background-position: center;
     background-size: cover;
     flex-shrink: 0;
-    justify-content: space-around;
-    display: flex;
-    align-items: center;
     width: 50%;
     
 }
