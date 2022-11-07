@@ -198,6 +198,63 @@ button{
     box-shadow: 0 6px 0 rgb(29 38 58 / 20%);
 }
 
+.promo{
+    display: flex;
+}
+.promo__image{
+    background-image: url(/img/promo.jpg);
+    background-position: center;
+    background-size: cover;
+    flex-shrink: 0;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    
+}
+
+.promo__right{
+    background-color: #dd5f26;
+    padding: 160px 60px;
+    width: 50%
+}
+
+.promo__info{
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 25px;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.promo__info p{
+    opacity: 0.8;
+}
+
+.promo__info p::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ec6b29;
+    margin-right: 10px;
+}
+.promo__button{
+    display: flex;
+    justify-content: center;
+}
+.promo__info button{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 30px;
+}
+.promo__info button i{
+    margin-left: 5px;
+    font-size:  14px;
+}
 .form__container{
     width: 550px;
 }
@@ -375,7 +432,6 @@ footer h3{
     .cards{
         grid-template-columns: auto;
     }
-
     .features__feedback{
         flex-direction: column;
     }
@@ -392,6 +448,16 @@ footer h3{
     .features__savings-box{
         margin-right: 0;
         margin-bottom: 30px;
+    }
+    .promo{
+        flex-direction: column-reverse;
+    }
+    .promo__image{
+        width: 100%;
+    }
+    .promo__right{
+        padding: 50px 10px;
+
     }
     .form{
         padding: 50px 10px;
