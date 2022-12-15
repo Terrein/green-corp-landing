@@ -9,10 +9,18 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: sticky;
-    top:0;
-    background-color: #fff;
+    position: fixed ;
+    left: 0;
+    right: 0;
+    background-color:rgba(255, 255, 255,0 );
     z-index: 1;
+    transition: background-color 0.25s ease, box-shadow 0.25s ease
+    ;
+}
+
+.header__scrolled{
+    background-color: #fff;
+    box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%) ;
 }
 
 .header__logo{
@@ -62,7 +70,7 @@ button{
     justify-content: space-around;
     display: flex;
     align-items: center;
-    padding-top: 115px;
+    padding-top: 200px;
     padding-bottom: 115px;
     background: url("img/back.png") no-repeat;
     background-position: center;

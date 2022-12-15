@@ -18,7 +18,7 @@ function initIncreaseNumberAnimation() {
     let element = document.querySelector(".features__clients-count")
     increaseNumberAnimationStep(0, element, 5000)
 }
-initIncreaseNumberAnimation()
+
 
 // Добавление панели другое
 document.querySelector('#budget').addEventListener('change', handleSelectChange = (event) => {
@@ -45,3 +45,25 @@ document.querySelector('#budget').addEventListener('change', handleSelectChange 
     }
 })
 
+
+let animationInited = false;
+
+const updateScroll = () => {
+    // анимация шапки
+    if (window.scrollY > 0) {
+        document.querySelector('header').classList.add('header__scrolled')
+    } else {
+        document.querySelector('header').classList.remove('header__scrolled')
+    }
+    // запуск анимации увеличения числа оценивших пользователей 
+
+    let windowBottomPosition = window.scrollY + window.innerHeight
+    let countElementPosition = document.querySelector('.features__clients-count').offsetTop
+    if (windowBottomPosition >= countElementPosition && !animationInited) {
+        animationInited = true
+        initIncreaseNumberAnimation()
+    }
+}
+
+
+window.addEventListener('scroll', updateScroll)
