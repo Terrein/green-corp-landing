@@ -67,3 +67,18 @@ const updateScroll = () => {
 
 
 window.addEventListener('scroll', updateScroll)
+
+const addSmoothScroll = (anchor) => {
+    anchor.addEventListener("click", onLinkClick)
+}
+
+const onLinkClick = (event) => {
+    event.preventDefault()
+    document.querySelector(event.target.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+    })
+}
+
+document.querySelectorAll('a[href ^= "#"]').forEach(element => {
+    addSmoothScroll(element)
+});
